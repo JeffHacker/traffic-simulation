@@ -56,6 +56,8 @@ location = 600
 car_in_front = None
 traffic = []
 traffic_log = []
+in_range = []
+itteration_log = []
 print(traffic_log)
 
 for _ in range(30):
@@ -74,8 +76,12 @@ for _ in range(60):
     for car in car_list:
         car.simulate()
         [traffic.append(car.location)]
+        [in_range.append(_)]
     [traffic_log.append(traffic)]
+    # itteration log is for using with a scatter plot in homework
+    itteration_log.append(in_range)
     traffic = []
+    in_range = []
 print(len(traffic_log[0]))
 print(len(traffic_log))
 print(traffic_log)
