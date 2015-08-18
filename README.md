@@ -1,4 +1,6 @@
-# Traffic simulation
+# Run traffic_sim.ipynb using Ipython Notebook
+
+## Traffic simulation
  
 ## Description
 
